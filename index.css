@@ -1,0 +1,177 @@
+body, div, h3, html, img, span, table, tbody, td, tr {
+    border: 0;
+    margin: 0;
+    padding: 0
+}
+
+body {
+    color: #333;
+    background-color: #f6f6f6;
+}
+
+h3 {
+    font-size: 1.4em;
+    font-weight: 700;
+    margin: 8px 0;
+}
+
+button, input {
+    outline: 0;
+}
+
+button, input, td {
+    font-size: 14px;
+}
+
+img {
+    margin-right: 2px;
+    margin-bottom: -8px;
+}
+
+area {
+    cursor: pointer;
+}
+
+table.reference {
+    border-collapse: collapse;
+    width: 60%;
+    margin: 4px auto;
+    text-align: center;
+}
+
+table.reference td {
+    line-height: 2em;
+    min-width: 24px;
+    border: 1px solid #d4d4d4;
+    padding: 5px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    vertical-align: top
+}
+
+tr td:first-child {
+    min-width: 25px;
+}
+
+table.reference tr:nth-child(odd) {
+    background-color: #f6f4f0
+}
+
+table.reference tr:nth-child(even) {
+    background-color: #fff
+}
+
+#main-line>td {
+    width: calc(100% / 3);
+}
+
+#main-line .main-line-wrap {
+    width: 236px;
+    margin: auto;
+}
+
+#selectedhexagon {
+    position: relative;
+    top: -35px;
+    left: 135px;
+    width: 21px;
+    height: 21px;
+    background-image: url(./imgs/img_selectedcolor.gif);
+    visibility: visible;
+}
+
+#divpreview {
+    width: 80px;
+    height: 20px;
+    margin: auto;
+    border: 1px solid #e3e3e3;
+    background-color: rgb(255, 0, 0);
+    visibility: hidden;
+}
+
+#wronginputDIV {
+    text-align: left;
+    position: absolute;
+    margin: 4px 10px;
+    color: #a94442;
+    display: none;
+}
+
+#entercolorDIV input {
+    width: 80%;
+    border: 1px solid #d3d3d3;
+    border-right: none;
+}
+
+#entercolorDIV input, #entercolorDIV button {
+    height: 28px;
+}
+
+#entercolorDIV.has-error input {
+    border: 2px solid red;
+}
+
+#html5DIV {
+    margin-top: 32px;
+}
+
+#html5colorpicker {
+    width: 85%;
+}
+
+#selectedcolor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 300px;
+    margin: auto;
+    font-size: 18px !important;
+    border: 1px solid #e3e3e3;
+    background-color: rgb(255, 0, 0);
+}
+
+#selectedcolor p:nth-of-type(-n+2) {
+    color: #000;
+}
+
+#selectedcolor p:nth-last-of-type(-n+2) {
+    color: #fff;
+}
+
+#selectedcolor p:nth-of-type(2n) {
+    text-shadow: 1px 1px 0 #444;
+}
+
+#colornamDIV {
+    margin-top: 16px;
+}
+
+#colorhexDIV, #colorrgbDIV, #colorhslDIV, #colorhsvDIV, #colornamDIV {
+    font-size: 18px;
+}
+
+#colorTable, #colorhexDIV, #colorrgbDIV, #colorhsvDIV, #colorhslDIV, #colornamDIV {
+    font-family: Consolas, 'Courier New', Courier, monospace;
+}
+
+#colorTable {
+    width: 100%;
+}
+
+#colorTable td {
+    vertical-align: middle;
+}
+
+#colorTable td:first-of-type {
+    width: 40px;
+}
+
+#colorTable td:nth-of-type(2) {
+    cursor: pointer;
+}
+
+#colorTable td:last-of-type {
+    width: 80px;
+}
